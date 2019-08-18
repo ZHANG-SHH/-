@@ -56,7 +56,16 @@ namespace TeamWork
                 NextBirthday.Text = (YearDays(date1[0]) - dateTime1.DayOfYear + dateTime11.DayOfYear).ToString();
             }
 
-             if (year != null)
+            //判断星座
+            int[] day = { 21, 19, 20, 20, 21, 21, 22, 23, 23, 23, 22, 21 };
+            string[] Constellation = { "摩羯座", "水瓶座", "双鱼座", "白羊座", "金牛座", "双子座", "巨蟹座", "狮子座", "处女座", "天秤座", "天蝎座", "射手座", "摩羯座" };
+            if (date <= day[month - 1])
+            {
+                ConstellationOutput.Text = Constellation[month - 1];
+            }
+            else ConstellationOutput.Text = Constellation[month];
+
+            if (year != null)
             {
                 DateTime dateTime2 = new DateTime(Convert.ToInt32(year), month, date);
                 if (year != null && year <= date1[0])
