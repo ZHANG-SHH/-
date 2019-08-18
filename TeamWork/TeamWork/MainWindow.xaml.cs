@@ -55,6 +55,27 @@ namespace TeamWork
                 DateTime dateTime11 = new DateTime(date1[0] + 1, month, date);
                 NextBirthday.Text = (YearDays(date1[0]) - dateTime1.DayOfYear + dateTime11.DayOfYear).ToString();
             }
+
+             if (year != null)
+            {
+                DateTime dateTime2 = new DateTime(Convert.ToInt32(year), month, date);
+                if (year != null && year <= date1[0])
+                {
+                    int sum = 0;
+                    if (Convert.ToInt32(year) < date1[0])
+                    {
+                        sum = dateTime1.DayOfYear + YearDays(Convert.ToInt32(year)) - dateTime2.DayOfYear;
+                        for (int j = Convert.ToInt32(year + 1); j < date1[0]; j++)
+                        {
+                            sum += YearDays(j);
+                        }
+                    }
+                    else sum = dateTime1.DayOfYear - dateTime2.DayOfYear;
+                    HasBorn.Text = sum.ToString();
+                }
+                //万天
+
+             }
         }
 
 
