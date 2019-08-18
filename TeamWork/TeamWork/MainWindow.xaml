@@ -66,7 +66,11 @@
         <Button x:Name="Assure" Content="确认" Grid.Column="1" HorizontalAlignment="Left" Margin="446.4,42,0,0" VerticalAlignment="Top" Width="75" Height="34" FontSize="18" Click="Assure_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="40,118,0,0" TextWrapping="Wrap" Text="距离下一次生日还有：" VerticalAlignment="Top" FontSize="24" Height="35" Grid.ColumnSpan="2"/>
         <TextBox x:Name="NextBirthday" HorizontalAlignment="Left" Height="35" Margin="202.4,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" FontSize="24" Grid.Column="1"/>
-        <TextBlock HorizontalAlignment="Left" Margin="274.4,118,0,0" TextWrapping="Wrap" Text="天" VerticalAlignment="Top" Height="35" FontSize="24" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="274.4,118,0,0" TextWrapping="Wrap" Text="天，出生已有：" VerticalAlignment="Top" Height="35" FontSize="24" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="526.4,119,0,0" TextWrapping="Wrap" Text="天" VerticalAlignment="Top" FontSize="24" Height="35" Grid.Column="1"/>
+        <TextBox x:Name="HasBorn" HorizontalAlignment="Left" Height="35" Margin="442.4,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" FontSize="24" Grid.Column="1"/>
+        <TextBox x:Name="万天计划" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="135.4,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,195,0,0" TextWrapping="Wrap" Text="万天纪念日为：" VerticalAlignment="Top" Height="35" FontSize="24" Grid.ColumnSpan="2"/>
 
 
     </Grid>
